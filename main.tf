@@ -20,5 +20,7 @@ resource "aws_instance" "app_server" {
   tags = {
     Name = "ExampleAppServerInstance"
   }
+  ebs_optimized = true
+  monitoring = true
 }
 
